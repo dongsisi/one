@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="lib/bootstrap-validator/css/bootstrapValidator.css">
+  <link rel="stylesheet" href="lib/nprogress/nprogress.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+
+  <!-- 侧边栏 -->
+  <div class="lt_aside">
+    <!-- 标题 -->
+    <div class="brand">
+      <a href="#">黑马31期威武</a>
+    </div>
+
+    <!-- 头像 -->
+    <div class="user">
+      <img src="images/default.png" alt="">
+      <p>超级管理员</p>
+    </div>
+    <!-- 导航 -->
+    <div class="nav">
+      <ul>
+        <li><a href="user.html"><i class="glyphicon glyphicon-user"></i><span>用户管理</span></a></li>
+        <li>
+          <a href="javascript:;" class="category"><i class="glyphicon glyphicon-list"></i><span>分类管理</span></a>
+          <!-- 用于切换展示的二级列表 -->
+          <div class="child" style="display: block">
+            <a  href="first.html">一级分类</a>
+            <a  href="second.html">二级分类</a>
+          </div>
+        </li>
+        <li><a class="active" href="product.html"><i class="glyphicon glyphicon-tags"></i><span>商品管理</span></a></li>
+      </ul>
+    </div>
+  </div>
+<!-- 主体部分 -->
+<div class="lt_main">
+  <!-- 主体的上面部分 -->
+  <div class="lt_topbar">
+    <a href="#" class="icon_left pull-left" >
+      <i class="glyphicon glyphicon-align-justify"></i>
+    </a>
+    <a href="#" class="icon_right pull-right">
+      <i class="glyphicon glyphicon-log-out"></i>
+    </a>
+  </div>
+  <!-- 主体的下面部分   下面部分是一个流式布局容器-->
+  <div class="container-fluid">
+    <!-- 面包屑 -->
+    <ol class="breadcrumb mt_20" >
+      <li><a href="index.html">管理系统</a></li>
+      <li class="active">商品管理</li>
+    </ol>
+
+      <!-- 表格 -->
+      <table class="table table-bordered table-hover ">
+        <thead>
+         <tr>
+           <th>序号</th>
+           <th>用户名</th>
+           <th>手机号</th>
+           <th>状态</th>
+           <th>操作</th>
+         </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>itcast</td>
+            <td>15745624854</td>
+            <td>正常</td>
+            <td><button class="btn btn-danger">禁用</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+  </div>
+
+</div>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+<script src="./lib/nprogress/nprogress.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/isLogin.js"></script>
+</body>
+
+</html>
