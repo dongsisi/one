@@ -71,6 +71,8 @@ $(function() {
       }
     }
   });
+
+
   // 4. 注册表单校验成功事件, 阻止默认的提交, 通过  ajax 提交
   $('#form').on("success.form.bv", function( e ) {
     e.preventDefault(); // 阻止默认的提交

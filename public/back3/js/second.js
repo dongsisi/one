@@ -138,11 +138,6 @@ $('#form').on('success.form.bv',function(e){
       $('#addModal').modal('hide');
       //重新渲染
       render();      
-    // 重置表单内容和状态, resetForm(true) 表示内容和状态都重置
-      $('#form').data('bootstrapValidator').resetForm(true);
-      // 由于下拉菜单和图片不是表单元素, 需要手动重置
-      $('#dropdownText').text("请选择一级分类：");
-      $('#imgBox img').attr('src','./images/none.png')
     }      
     }
   })
