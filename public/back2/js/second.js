@@ -67,11 +67,7 @@ $(function() {
       }
     })
   });
-
-
-
-  // 3. 给下拉列表的 a 添加点击事件(通过事件委托实现)
-  $('.dropdown-menu').on("click", 'a', function() {
+$('.dropdown-menu').on("click", 'a', function() {
     // 获取文本值
     var txt = $(this).text();
     // 设置给按钮
@@ -85,6 +81,10 @@ $(function() {
     // 调用updateStatus更新 隐藏域 校验状态成 VALID
     $('#form').data("bootstrapValidator").updateStatus("categoryId", "VALID")
   });
+
+
+  // 3. 给下拉列表的 a 添加点击事件(通过事件委托实现)
+  
 
 
   // 4. 配置文件上传插件, 让插件发送异步文件上传请求
