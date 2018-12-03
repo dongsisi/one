@@ -1,0 +1,15 @@
+.lt_sort{
+  height: 30px;
+  line-height: 30px;
+  background-color: #EEEEEE;
+}
+.lt_sort a{
+  width:25%;
+  float:left;
+  color:#666;
+  text-align: center;
+  font-size:12px;
+}
+.lt_sort i{
+  margin-left:5px;
+}
